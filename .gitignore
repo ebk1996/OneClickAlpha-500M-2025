@@ -151,3 +151,7 @@ dist
 .env.development
 .env.production
 .env.test
+
+# Local environment
+.env.local
+env.local
