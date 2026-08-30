@@ -1,0 +1,6 @@
+import axios from 'axios';
+
+export async function getNansenSmartMoney() {
+  const res = await axios.get('https://api.nansen.ai/smart-money', { headers: { Authorization: `Bearer ${process.env.NANSEN_API_KEY}` } });
+  return { score: res.data.topWallets.length > 5 ? 96 : 0 };
+}

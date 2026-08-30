@@ -1,0 +1,10 @@
+{
+  "spec_dir": "tests",
+  "spec_files": [
+    "frontend/**/*.spec.ts"
+  ],
+  "helpers": [
+    "spec/helpers/setup.ts"
+  ],
+  "random": false
+}
